@@ -76,7 +76,7 @@ async function uploadFile(file) {
     );
 
     if (response.ok) {
-      showMessage("El archivo fue subido exitosamente", "Éxito");
+      showMessage("El archivo fue subido exitosamente!", "success");
     } else {
       throw new Error("Upload failed");
     }
