@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compra semanal Choclas</title>
+  </head>
+  <body>
+    <div class="upload-container">
+      <h1>Planeación compra semanal</h1>
+      <p class="subtitle">Suba el archivo Excel de inventario</p>
+
+      <div class="drop-zone" id="dropZone">
+        <svg
+          class="upload-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="17 8 12 3 7 8" />
+          <line x1="12" y1="3" x2="12" y2="15" />
+        </svg>
+        <p>Arrastre y suelte o haga click para subir el archivo .xls o .xlsx</p>
+        <input
+          type="file"
+          accept=".xls,.xlsx"
+          class="file-input"
+          id="fileInput"
+        />
+      </div>
+
+      <div class="loading" id="loading">Subiendo...</div>
+      <div class="message" id="message"></div>
+    </div>
+  </body>
+</html>
